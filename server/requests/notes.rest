@@ -1,0 +1,28 @@
+GET http://localhost:3001/api/notes
+
+###
+GET http://localhost:3001/api/notes/60a02d7c840b59c45daf4a7e
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZGNiZTNjNDIwZWY0MjA3NDNhMjU3MCIsInVzZXJuYW1lIjoiY2FybGl0b3MiLCJpYXQiOjE2MjUxMDQyMjV9.DSJt69KRB98Ur7Ap-rd3DuwRBcdR8kX1JUJmm1bU5Qk
+
+{
+    "content": "Otra nota que sirve como prueba",
+    "isImportant": true
+}
+
+###
+PUT http://localhost:3001/api/notes/60dc7986f5073921343205b6
+Content-Type: application/json
+
+{
+    "content": "cambiado",
+}
+
+
+###
+DELETE http://localhost:3001/api/notes/60dc7986f5073921343205b6
+
+
